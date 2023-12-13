@@ -61,6 +61,10 @@ const authSlice = createSlice({
     clearStateLoginData: (state) => {
       state.login = "";
       state.password = "";
+      state.errors = {
+        login: false,
+        password: false,
+      }
     },
   },
 });

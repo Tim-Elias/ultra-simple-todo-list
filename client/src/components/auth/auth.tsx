@@ -13,15 +13,15 @@ export const Auth = () => {
   const login = useSelector((state: IState) => state.auth.login);
   const password = useSelector((state: IState) => state.auth.password);
 
-  const handleLogin = () => {
+  const handleLogin = async () => {
     const error = {
       login: login === "",
       password: password === "",
     };
 
     if (Object.values(error).every((el) => !el)) {
-      loginFn();
-      return true;
+      
+      return await loginFn();
     }
 
     dispatch(setStateAuthErrors(error));

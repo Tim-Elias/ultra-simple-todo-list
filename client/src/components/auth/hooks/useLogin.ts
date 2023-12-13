@@ -18,15 +18,18 @@ export const useLogin = () => {
     password,
   };
 
-  const loginFn = async () => {
+  const loginFn = async (): Promise<boolean> => {
     try {
       const data = await postDataToServer<IAuthData>("auth/login", params);
       if (data) {
         dispatch(setStateAuthData(data));
+
       }
       dispatch(clearStateLoginData());
+      return true
     } catch {
       alert("Неверные Имя пользователя или Пароль");
+      return false
     }
   };
 

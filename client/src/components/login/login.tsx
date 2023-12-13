@@ -2,10 +2,10 @@ import React from "react";
 import { Dialog } from "../dialog";
 import { useDispatch, useSelector } from "react-redux";
 import { IState } from "../../store/modules";
-import { setStateAuthLogin, setStateAuthPassword } from "../../store/modules/auth";
+import { clearStateLoginData, setStateAuthLogin, setStateAuthPassword } from "../../store/modules/auth";
 import './login.css'
 
-export const Login = ({handleLogin}: {handleLogin: () => boolean}) => {
+export const Login = ({handleLogin}: {handleLogin: () => boolean | Promise<boolean>}) => {
   
     const dispatch = useDispatch();
     const authLogin = useSelector(
@@ -60,6 +60,7 @@ export const Login = ({handleLogin}: {handleLogin: () => boolean}) => {
       content={loginForm}
       okButtonLabel="Войти"
       onConfirm={handleLogin}
+      onCancel={() => dispatch(clearStateLoginData())}
     />
   );
 };
