@@ -1,0 +1,27 @@
+.task {
+    margin: 8px auto ;
+    border: solid rgb(235, 238, 244) 1px;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: rgb(245, 245, 250);
+    
+}
+
+.task-field {
+    width: 100%;
+}
+
+.task-footer {
+    margin-top: 8px;
+    display: flex;
+    gap: 8px;
+}
+
+.task-tag {
+    font-size: 12px;    
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background-color: rgb(255, 246, 180) ;
+    border: solid 1px rgb(242, 233, 166) ;
+}

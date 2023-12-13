@@ -1,0 +1,9 @@
+.login-input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #aaa;
+}
+
+.login-field{
+    padding: 12px;
+}

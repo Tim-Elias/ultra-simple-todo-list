@@ -1,0 +1,18 @@
+
+.paginator-page {
+  padding: 8px 12px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.paginator-page-active{
+  background-color: rgb(244, 235, 235);
+  border-radius: 3px;
+}
+
+.paginator {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+}

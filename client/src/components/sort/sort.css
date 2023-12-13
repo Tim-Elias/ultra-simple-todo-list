@@ -1,0 +1,25 @@
+.sort{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 12px
+}
+
+.sort-select{
+  padding: 6px;
+  border-radius: 6px;
+  border-color: #AAA;
+}
+
+.sort-label{
+  padding: 4px 0;
+}
+
+.sort-desc{
+  cursor: pointer;
+  padding: 0 12px ;
+  font-weight: 900;
+
+  border-radius: 6px;
+  border: 1px solid #AAA;
+}

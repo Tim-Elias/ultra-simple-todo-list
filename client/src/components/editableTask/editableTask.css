@@ -1,0 +1,9 @@
+.editable-task-input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #aaa;
+}
+
+.editable-task-field{
+    padding: 12px;
+}
